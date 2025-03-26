@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Champagne - Team</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #ff4655);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 5px solid #ff4655;
+        }
+        .header h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #ff4655, 0 0 20px #ff4655;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 30px;
+        }
+        .member-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #ff4655;
+            border-radius: 10px;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .member-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #ff4655;
+        }
+        .member-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #ff4655;
+            margin-bottom: 15px;
+        }
+        .member-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #ff4655;
+            text-shadow: 0 0 5px #ff4655;
+        }
+        .member-card p {
+            font-size: 1em;
+            color: #d3d3d3;
+        }
+        .audio-player {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Valorant Champagne</h1>
+        <p>El equipo definitivo</p>
+    </div>
+    <div class="team-container">
+        <div class="member-card">
+            <img src="integrante01.JPEG" alt="Luis Alberto Tecsi Huallpa">
+            <h2>Luis Alberto</h2>
+            <p>Tecsi Huallpa</p>
+        </div>
+        <div class="member-card">
+            <img src="integrante02.JPEG" alt="Medalith Luz Muñoz Achahui">
+            <h2>Medalith Luz</h2>
+            <p>Muñoz Achahui</p>
+        </div>
+        <div class="member-card">
+            <img src="integrante03.JPEG" alt="Saul Roque Aysa">
+            <h2>Saul Roque</h2>
+            <p>Aysa</p>
+        </div>
+        <div class="member-card">
+            <img src="integrante04.JPEG" alt="Salome Celeste Ccahua Huamani">
+            <h2>Salome Celeste</h2>
+            <p>Ccahua Huamani</p>
+        </div>
+        <div class="member-card">
+            <img src="integrante05.JPEG" alt="Rye Gabriel Gregory Pauccar Quejia">
+            <h2>Rye Gabriel</h2>
+            <p>Gregory Pauccar Quejia</p>
+        </div>
+    </div>
+    <audio class="audio-player" controls autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</body>
+</html>
